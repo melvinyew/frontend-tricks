@@ -1,7 +1,6 @@
-<!-- Helper Website
+<!--
 Open source icons
 https://ionic.io/ionicons
-
 -->
 
 <!DOCTYPE html>
@@ -98,6 +97,7 @@ https://ionic.io/ionicons
     });
 
     let MenuList = document.querySelectorAll('.MenuList li')
+    // Sets the active link by adding the 'active' class to the clicked menu item
     function activeLink() {
       MenuList.forEach((item) => {
         item.classList.remove('active')

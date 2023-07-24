@@ -54,7 +54,7 @@ body {
   width: 20px;
   height: 20px;
   border-bottom-right-radius: 20px;
-  /* ! What?! */
+  /* * 学到了：阴影的参数 */
   /* offset-x | offset-y | blur-radius | spread-radius | color */
   box-shadow: 5px 5px 0 5px var(--clr);
   background-color: transparent;
@@ -194,7 +194,7 @@ body {
   background-color: #fff;
   transform: translateY(-9px);
   transition: 0.5s;
-  /* * 学到了！ */
+  /* * 学到了: before是最上面那根，before的阴影是中间那根，after是最下面那根 */
   box-shadow: 0 9px 0 #fff;
 }
 
@@ -208,7 +208,7 @@ body {
   transition: 0.5s;
 }
 
-/* * 学到了！ */
+/* * 学到了: 上面那根旋转45度，阴影（中间那根）消失，下面那根旋转45度 */
 .menuToggle.active::before {
   transform: translateY(0px) rotate(45deg);
   box-shadow: 0 0 0 #fff;

@@ -20,6 +20,7 @@ body {
   position: relative;
   width: 200px;
   height: 200px;
+  margin: auto 4em;
   /* background-color: #f00; */
 }
 
@@ -35,23 +36,32 @@ body {
   height: 15px;
   background-color: #000;
   left: 50%;
-  /* ! What?! */
+  /* * 学到了：改变旋转中心 */
   transform-origin: 50% 100px;
-  /* transform: rotate(25deg); */
   opacity: 0;
-  animation: animate .1s linear forwards;
+  animation: animate 0.1s linear forwards;
 }
 
-@keyframes animate  {
+@keyframes animate {
   to {
     opacity: 1;
   }
 }
 
-/* ! What?! */
-.card .rating .block:nth-child(-n+91){
+/* * 学到了：叠加阴影 */
+.card .rating .block.block-html {
   background: #0f0;
   box-shadow: 0 0 15px #0f0, 0 0 30px #0f0;
+}
+
+.card .rating .block.block-css {
+  background: #0ff;
+  box-shadow: 0 0 15px #0ff, 0 0 30px #0ff;
+}
+
+.card .rating .block.block-js {
+  background: #ff0;
+  box-shadow: 0 0 15px #ff0, 0 0 30px #ff0;
 }
 
 .card .rating h2 {

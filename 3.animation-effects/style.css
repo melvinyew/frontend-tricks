@@ -9,7 +9,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: radial-gradient(#444, #222);
+  background-color: #000;
 }
 
 .container {
@@ -18,13 +18,51 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
+  /* ? */
+  -webkit-box-reflect: below 2px linear-gradient(transparent, #0004);
 }
 
 .box {
   position: relative;
   width: 200px;
   height: 200px;
-  margin: auto 4em;
-  background-color: #f00;
-  box-shadow: 0 0 15px #0f0, 0 0 30px #0f0;
+  margin: auto;
+  background: linear-gradient(
+      45deg,
+      #00f376 10%,
+      transparent 10%,
+      transparent 50%,
+      #00f376 50%,
+      #00f376 60%,
+      transparent 60%,
+      transparent 100%
+    ),
+    linear-gradient(
+      135deg,
+      #00f37666 10%,
+      transparent 10%,
+      transparent 50%,
+      #00f37666 50%,
+      #00f37666 60%,
+      transparent 60%,
+      transparent 100%
+    );
+  /* ? */
+  background-size: 40px 40px;
+  /* ? */
+  filter: hue-rotate(calc(var(--i) * 90deg));
+  transform: rotate(calc(var(--i) * 90deg));
+
+  box-shadow: 0 0 15px #0f0;
+  animation: animate 1s linear infinite;
+}
+
+/* ? */
+@keyframes animate {
+  0% {
+    background-position: 40px;
+  }
+  100% {
+    background-position: 0px;
+  }
 }

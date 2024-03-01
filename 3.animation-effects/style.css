@@ -18,7 +18,7 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
-  /* ? */
+  /* 非标准属性，Firefox不支持 */
   -webkit-box-reflect: below 2px linear-gradient(transparent, #0004);
 }
 
